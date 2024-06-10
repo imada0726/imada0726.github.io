@@ -1,0 +1,86 @@
+.横並びA { /* 同じ幅 */
+	display: flex;  /* 横並び */
+
+	gap: 20px;  /* 各列の間に隙間を空ける */
+	
+	justify-content: center;  /* 列をまとめて中央に寄せる */
+	
+	
+	 & .列{
+		background-color: orange;
+		width: 80px;  /* 幅 */
+	 }
+}
+
+.横並びB{ /* 異なる幅 */
+	display: flex;
+	justify-content: space-between; /* 列を左右の端に分ける */
+	
+	 & .広い列 {
+		background-color: lightblue;
+		width: 200px;
+   }
+	 & .狭い列 {
+		background-color: lightgreen;
+		width: 120px;
+   }
+}
+
+
+/*演習2*/
+
+.動物たち{
+	display: flex;
+  justify-content: space-between;
+	
+	 & .イヌ{
+		border: 1.5px solid gray;
+		width: 100px;
+		padding: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		 
+		  & .イヌ画像{
+			 width: 100%;
+		  }	 
+		 
+		   & .イヌ情報{
+			  font-weight: normal;
+			  font-size: 12px;
+		   }
+	 }
+	
+	 & .ヤク{
+		border: 1.5px solid gray;
+		width: 100px;
+		padding: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		 
+		  & .ヤク画像{
+			 width: 100%;
+		  }	 
+		  
+		   & .ヤク情報{
+			  font-weight: normal;
+			  font-size: 12px;
+		   }
+	 }
+	
+	 & .キツネ{
+		border: 1.5px solid gray;
+		width: 100px;
+		padding: 10px;
+		font-weight: bold;
+		font-size: 20px;
+		 
+		  & .キツネ画像{
+			 width: 100%;
+		  }	 
+		 
+		   & .キツネ情報{
+			  font-weight: normal;
+			  font-size: 12px;
+		   }
+	 }
+}
